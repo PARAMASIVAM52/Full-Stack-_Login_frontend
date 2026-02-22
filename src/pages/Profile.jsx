@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 
 function Profile() {
   const navigate = useNavigate();
+  const API_URL=import.meta.env.VITE_API_URL;
+
   const [message, setMessage] = useState("");
 
   useEffect(() => {
@@ -13,7 +15,7 @@ function Profile() {
       return;
     }
 
-    fetch("http://localhost:5000/profile", {
+    fetch(`${API_URL}/profile`, {
       headers: {
         Authorization: token
       }

@@ -5,6 +5,8 @@ import axios from "axios";
 
 function Login() {
   const navigate = useNavigate();
+  const API_URL=import.meta.env.VITE_API_URL;
+
 
   const [formData, setFormData] = useState({
     email: "",
@@ -25,7 +27,7 @@ function Login() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/login",
+        `${API_URL}/login`,
         formData
       );
 

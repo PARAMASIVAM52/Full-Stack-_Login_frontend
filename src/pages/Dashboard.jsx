@@ -7,6 +7,8 @@ function Dashboard() {
   const navigate = useNavigate();
   const [userData, setUserData] = useState(null);
 
+  const API_URL=import.meta.env.VITE_API_URL;
+
   useEffect(() => {
     const fetchProfile = async () => {
       const token = localStorage.getItem("token");
@@ -18,7 +20,7 @@ function Dashboard() {
 
       try {
         const res = await axios.get(
-          "http://localhost:5000/profile",
+          `${API_URL}/profile`,
           {
             headers: {
               Authorization: `Bearer ${token}`
