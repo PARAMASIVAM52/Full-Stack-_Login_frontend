@@ -1,0 +1,35 @@
+.home{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    background-color: transparent;
+    .home-left{
+        padding: 20%;
+        h1{
+            font-size: 60px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        p{
+            font-size: 30px;
+            color: rgba(0, 0, 0, 0.787);
+        }
+        .primary-btn{
+            background-color: rgb(1, 56, 1);
+            border-radius: 5px;
+            color: white;
+            height: 50px;
+            width: 120px;
+            font-size: 20px;
+            font-family:'Times New Roman', Times, serif;
+            border: none;
+        }
+    }
+    
+    .home-right{
+        background-color: transparent;
+        img{
+            height: 500px;
+            width: 500px;
+        }
+    }
+
+}

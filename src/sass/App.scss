@@ -1,0 +1,24 @@
+body {
+    background-color: rgba(255, 255, 255, 0.349);
+    margin: 0;
+    padding: 0;
+    .navbar {
+        background-color: transparent;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .links {
+            margin: 1% 10%;
+            a {
+                margin-left: 30%;
+                text-decoration: none;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: 700;
+                color: rgba(0, 0, 0, 0.719);
+            }
+        }
+    }
+}
