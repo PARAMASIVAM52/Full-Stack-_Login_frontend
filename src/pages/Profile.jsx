@@ -15,7 +15,7 @@ function Profile() {
       return;
     }
 
-    fetch(`${API_URL}/profile`, {
+    fetch(`https://full-stack-login-backend.onrender.com/profile`, {
       headers: {
         Authorization: token
       }
@@ -29,6 +29,7 @@ function Profile() {
     navigate("/login");
   };
 
+  
   return (
     <div style={{ textAlign: "center", marginTop: "100px" }}>
       <h1>Profile</h1>

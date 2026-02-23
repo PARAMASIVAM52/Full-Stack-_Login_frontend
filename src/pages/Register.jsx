@@ -23,11 +23,11 @@ function Register() {
 
     try {
       const res = await axios.post(
-        `${API_URL}/register`,
+        `https://full-stack-login-backend.onrender.com//register`,
         formData
       );
 
-      alert(res.data.message);
+      alert(res.data.message)
     } catch (err) {
       alert(err.response?.data?.message || "Error occurred");
     }

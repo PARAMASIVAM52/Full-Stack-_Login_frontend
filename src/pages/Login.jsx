@@ -27,7 +27,7 @@ function Login() {
 
     try {
       const res = await axios.post(
-        `${API_URL}/login`,
+        `https://full-stack-login-backend.onrender.com/login`,
         formData
       );
 
