@@ -23,7 +23,7 @@ function Register() {
 
     try {
       const res = await axios.post(
-        `https://full-stack-login-backend.onrender.com//register`,
+        `https://full-stack-login-backend.onrender.com/register`,
         formData
       );
 
