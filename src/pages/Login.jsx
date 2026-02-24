@@ -5,7 +5,7 @@ import axios from "axios";
 
 function Login() {
   const navigate = useNavigate();
-  const API_URL=import.meta.env.VITE_API_URL;
+  const API_URL = import.meta.env.VITE_API_URL;
 
 
   const [formData, setFormData] = useState({
@@ -27,7 +27,7 @@ function Login() {
 
     try {
       const res = await axios.post(
-        `https://full-stack-login-backend.onrender.com//login`,
+        `${API_URL}/login`,
         formData
       );
 

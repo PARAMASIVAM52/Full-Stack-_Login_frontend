@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 function Profile() {
   const navigate = useNavigate();
-  const API_URL=import.meta.env.VITE_API_URL;
+  const API_URL = import.meta.env.VITE_API_URL;
 
   const [message, setMessage] = useState("");
 
@@ -15,7 +15,7 @@ function Profile() {
       return;
     }
 
-    fetch(`https://full-stack-login-backend.onrender.com/profile`, {
+    fetch(`${API_URL}/profile`, {
       headers: {
         Authorization: token
       }
@@ -29,7 +29,7 @@ function Profile() {
     navigate("/login");
   };
 
-  
+
   return (
     <div style={{ textAlign: "center", marginTop: "100px" }}>
       <h1>Profile</h1>

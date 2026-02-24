@@ -9,7 +9,7 @@ function Register() {
     password: ""
   });
 
-  const API_URL=import.meta.env.VITE_API_URL;
+  const API_URL = import.meta.env.VITE_API_URL;
 
   const handleChange = (e) => {
     setFormData({
@@ -23,7 +23,7 @@ function Register() {
 
     try {
       const res = await axios.post(
-        `https://full-stack-login-backend.onrender.com//register`,
+        `${API_URL}/register`,
         formData
       );
 
