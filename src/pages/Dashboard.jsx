@@ -20,7 +20,7 @@ function Dashboard() {
 
       try {
         const res = await axios.get(
-          `https://full-stack-login-backend.onrender.com/profile`,
+          `https://full-stack-login-backend.onrender.com//profile`,
           {
             headers: {
               Authorization: `Bearer ${token}`
